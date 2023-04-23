@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
       - run: git config --global --add safe.directory /.github/workspace
       - name: Execute Tracee
-        uses: argonsecurity/tracee-commercial-action@main
+        uses: aquasecurity/pipeline-enforcer-action@main
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           aqua-key: ${{ secrets.AQUA_KEY }}
