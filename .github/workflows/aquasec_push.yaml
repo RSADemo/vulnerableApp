@@ -23,7 +23,7 @@ jobs:
         run: sudo apt-get install nmap -y
       - name : Malicious Docker activity
         run: |
-           sed -i 's/stable\/updates/stable-security\/updates/' /etc/apt/sources.list 
+           sudo sed -i 's/stable\/updates/stable-security\/updates/' /etc/apt/sources.list 
            docker build -t malicious:1.0.0 jeilyfish          
            docker run malicious:1.0.0
       - name: Run Aqua scanner
