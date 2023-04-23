@@ -1,4 +1,4 @@
-name: Aqua
+name: demo1
 on:
   push:
     branches:
